@@ -47,7 +47,6 @@ func checkVideoInterface(device string) (string, error) {
 }
 
 func loadModule(mod string) error {
-	fmt.Println(filepath.Join("/lib/modules", release, mod))
 	f, err := os.Open(filepath.Join("/lib/modules", release, mod))
 	if err != nil {
 		return err
